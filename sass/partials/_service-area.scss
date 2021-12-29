@@ -1,0 +1,102 @@
+.our-service-area {
+  padding: 100px 0 200px 0;
+  font-family: $font-2;
+
+  .our-service-title {
+    @include gradientBtnBg;
+    max-width: 310px;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: end;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: end;
+    border-radius: 20px;
+    min-height: 355px;
+    p {
+      color: #fff;
+      text-transform: uppercase;
+      font-size: 36px;
+      font-weight: 600;
+      text-align: right;
+      padding-bottom: 22px;
+      padding-right: 20px;
+    }
+  }
+}
+
+.service-item {
+  .accordion {
+    .accordion-item {
+      box-shadow: 0px 4px 28px rgba(0, 0, 0, 0.1);
+      border-radius: 20px;
+      border: 0;
+      .accordion-button {
+        border-radius: 20px;
+        border: 0;
+        background: $light;
+        font-size: 24px;
+        line-height: 36px;
+        color: #182a44;
+        padding: 54px 48px 54px 25px;
+        font-weight: 800;
+        position: relative;
+        &::after {
+          position: absolute;
+          width: 44px;
+          height: 44px;
+          background: #ffe8e8;
+          border-radius: 24px;
+          top: -20px;
+          right: 20px;
+          background-image: url("../../dist/images/plus.svg");
+          background-repeat: no-repeat;
+          background-position: center center;
+        }
+      }
+
+      .accordion-button:not(.collapsed) {
+        box-shadow: none;
+        color: #182a44;
+        background: #eff0f1;
+        padding-bottom: 0;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+      }
+      .accordion-button:not(.collapsed)::after {
+        background-image: url("../../dist/images/minus.svg"),
+          linear-gradient(#182a44, #3c5271);
+      }
+      .accordion-body {
+        padding: 19px 17px 18px 25px;
+        text-align: start;
+        background: #eff0f1;
+        color: #3c5271;
+        font-size: 14px;
+        line-height: 21px;
+        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+      }
+    }
+  }
+}
+
+.service-item-one {
+  margin-top: 100px;
+  margin-left: 100px;
+  .accordion {
+    max-width: 285px;
+  }
+}
+
+.service-item-two .accordion {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.service-item-two .accordion .accordion-item {
+  flex-grow: 1;
+  width: 31%;
+}

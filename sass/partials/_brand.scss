@@ -1,0 +1,15 @@
+.brand-area {
+  padding: 70px 0px 100px 0;
+  .container {
+    .brand-logo-single-area {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .brand-logo-single {
+        img {
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+}

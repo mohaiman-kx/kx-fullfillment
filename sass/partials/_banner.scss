@@ -1,0 +1,135 @@
+.banner-area {
+  padding: 100px 0 100px 0;
+  font-family: $font-2;
+  .banner-title {
+    min-width: 430px;
+    width: 430px;
+    h1 {
+      @include gradientText;
+      font-size: 40px;
+      font-weight: 900;
+      line-height: 140%;
+    }
+  }
+}
+
+.bannar__form-area {
+  .input-group-custom {
+    justify-content: center;
+    input {
+      width: 260px;
+      border-radius: 100px;
+      font-size: 16px;
+      padding: 13px 0px 13px 30px;
+      border: 0;
+      font-size: 16px;
+      font-weight: 600;
+      font-family: $font-2;
+      color: #182a44;
+      box-shadow: 0px 0px 17px rgba(0, 0, 0, 0.1);
+      &::placeholder {
+        background: -webkit-linear-gradient(#182a44, #3c5271);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 16px;
+        font-weight: 600;
+        font-family: $font-2;
+      }
+      &:focus-visible {
+        outline: 0;
+      }
+    }
+    .btn-footer-search {
+      background: $color-red;
+      border-radius: 50%;
+      color: #fff;
+      padding: 17px;
+      border: 0;
+      position: relative;
+      left: -45px;
+      margin-top: 40px;
+    }
+  }
+}
+
+.kx-banner-card {
+  box-shadow: 0px 0px 17px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 10px;
+  right: 30px;
+  padding: 15px;
+  border-radius: 10px;
+  h4 {
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  ul {
+    li {
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 10px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      a {
+        color: #ee333a;
+        font-size: 13px;
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+.banner-counter-area {
+  display: flex;
+  padding: 50px 0;
+  .banner-counter {
+    text-align: center;
+    margin-right: 120px;
+    h2 {
+      color: #ee333a;
+      font-size: 36px;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+    p {
+      @include gradientText60;
+      font-size: 14px;
+      font-weight: 800;
+      line-height: 21px;
+    }
+  }
+}
+
+.map-area {
+  .map-main-image {
+    position: relative;
+    .kx-round {
+      position: absolute;
+      position: absolute;
+      top: 44%;
+      left: 22.1%;
+      -webkit-animation: flipKX 2s linear infinite;
+      -moz-animation: flipKX 2s linear infinite;
+      animation: flipKX 2s linear infinite;
+    }
+  }
+}
+
+@-moz-keyframes flipKX {
+  100% {
+    -moz-transform: rotateY(360deg);
+  }
+}
+@-webkit-keyframes flipKX {
+  100% {
+    -webkit-transform: rotateY(360deg);
+  }
+}
+@keyframes flipKX {
+  100% {
+    -webkit-transform: rotateY(360deg);
+    transform: rotateY(360deg);
+  }
+}

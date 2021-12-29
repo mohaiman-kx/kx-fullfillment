@@ -1,0 +1,380 @@
+.career-banner {
+  padding: 60px 0;
+  font-family: $font-2;
+  &__context {
+    h1 {
+      @include careerHeadingBlue(600);
+    }
+    p {
+      @include gradientText60;
+      font-size: 16px;
+      line-height: 24px;
+      width: 464px;
+    }
+    &__button {
+      margin-top: 40px;
+      .career-banner-btn {
+        @include gradientBtnBg;
+        border: 0;
+        color: $light;
+        font-size: 16px;
+        padding: 15px 30px;
+        border-radius: 5px;
+      }
+    }
+  }
+}
+
+.open-position-area {
+  padding: 60px 0;
+  font-family: $font-2;
+  &__title {
+    text-align: center;
+    p {
+      @include careerHeadingBlue(800);
+      text-transform: capitalize;
+    }
+  }
+  &__form {
+    display: inline-flex;
+    align-items: center;
+    margin-top: 60px;
+    form {
+      select,
+      input {
+        background: #f7f7f7;
+        padding: 11px 15px;
+        border: 0;
+        border-radius: 10px;
+      }
+      .opa-select {
+        margin-right: 40px;
+      }
+      .opa-input {
+        margin-right: 64px;
+        width: 400px;
+      }
+    }
+    .opa-button-area {
+      display: inline-flex;
+      align-items: center;
+      justify-content: space-around;
+      p {
+        font-size: 16px;
+        color: #bebebe;
+        text-transform: uppercase;
+        margin: 0 24px;
+        font-weight: 500;
+      }
+      .opa-btn-search {
+        @include gradientBtnBg;
+        color: $light;
+        text-decoration: none;
+        font-size: 16px;
+        text-transform: uppercase;
+        padding: 10px 30px;
+        border-radius: 10px;
+        font-weight: 500;
+      }
+      .opa-btn-view {
+        @include gradientBG;
+        color: $light;
+        text-decoration: none;
+        font-size: 16px;
+        text-transform: uppercase;
+        padding: 10px 30px;
+        border-radius: 10px;
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+.our-culture-area {
+  font-family: $font-2;
+  padding: 60px 0;
+  &__title {
+    text-align: center;
+    p {
+      @include careerHeadingBlue(800);
+      text-transform: capitalize;
+    }
+  }
+  &__content {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 60px;
+    p {
+      @include gradientText60;
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+}
+
+.our-culture-context {
+  font-family: $font-2;
+  h5 {
+    @include gradientText;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+  p {
+    @include gradientText60;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: justify;
+  }
+}
+
+.application-process {
+  font-family: $font-2;
+  padding-top: 60px;
+  padding-bottom: 100px;
+  &__title {
+    p {
+      text-align: center;
+      @include careerHeadingRed(800);
+      text-transform: capitalize;
+    }
+  }
+  &__content {
+    margin-top: 20px;
+    p {
+      text-align: center;
+      line-height: 140%;
+      @include gradientText60;
+      font-weight: 500;
+    }
+  }
+}
+
+.application-process__accordion {
+  margin-top: 40px;
+  .accordion-item {
+    margin-bottom: 24px;
+    border-radius: 10px;
+    border: 2px solid #182a444b;
+  }
+  .accordion-body {
+    padding: 0px 40px 40px 40px;
+    border: 0;
+    border-top: 0;
+    border-radius: 10px;
+    @include gradientText60;
+    font-size: 16px;
+    line-height: 140%;
+  }
+  .accordion-button {
+    padding: 40px;
+    font-size: 18px;
+    border-radius: 10px;
+    @include gradientText;
+    font-weight: 500;
+    border: 0;
+    box-shadow: none;
+  }
+  .accordion-item:first-of-type .accordion-button {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  .accordion-item:last-of-type .accordion-button.collapsed {
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+  .accordion-button:not(.collapsed) {
+    color: #182a44;
+    background-color: transparent;
+    border-bottom: 0;
+  }
+}
+
+.career-contact {
+  background: -webkit-linear-gradient(
+    rgba(24, 42, 68, 0.1),
+    rgba(60, 82, 113, 0.1)
+  );
+  font-family: $font-2;
+  padding: 40px;
+  margin-top: 40px;
+  &__title {
+    p {
+      @include gradientText60;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 24px;
+      letter-spacing: 4%;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+    h5 {
+      @include gradientText;
+      font-size: 40px;
+      line-height: 60px;
+      text-transform: capitalize;
+      font-weight: 800;
+    }
+  }
+  &__form {
+    margin-top: 40px;
+    form {
+      .input-container {
+        padding-bottom: 1em;
+      }
+      position: relative;
+      .right-inner-addon {
+        position: relative;
+      }
+      .right-inner-addon input {
+        padding-right: 35px !important;
+      }
+      .right-inner-addon img {
+        position: absolute;
+        right: 0px;
+        padding: 12px 12px;
+        pointer-events: none;
+        top: 0px;
+      }
+      .form-control {
+        border: 0;
+        padding: 16px 20px;
+        margin-bottom: 20px;
+      }
+      .career-form-btn {
+        button {
+          border: 0;
+          text-transform: uppercase;
+          color: $light;
+          font-size: 16px;
+          letter-spacing: 4%;
+          font-weight: 800;
+          @include gradientBG;
+          width: 100%;
+          padding: 13px 0;
+          border-radius: 5px;
+        }
+      }
+    }
+  }
+}
+
+.position-area-row {
+  border-radius: 18px;
+  box-shadow: -4px 4px 18px rgba(34, 82, 155, 0.1);
+  padding: 60px;
+  margin-top: 70px;
+  .position-area {
+    h3 {
+      font-size: 24px;
+      line-height: 34px;
+      font-weight: 600;
+      @include gradientText;
+      margin-bottom: 27px;
+    }
+    p {
+      font-size: 16px;
+      line-height: 22px;
+      font-weight: 400;
+      text-align: justify;
+      @include gradientText60;
+    }
+    .position-area__button {
+      margin-top: 50px;
+      button {
+        background: -webkit-linear-gradient(
+          rgba(24, 42, 68, 0.2),
+          rgba(60, 82, 113, 0.2)
+        );
+        color: #182a44;
+        font-size: 16px;
+        border: 0;
+        border-radius: 5px;
+        padding: 10px 40px;
+      }
+    }
+  }
+  .position-area-list {
+    ul {
+      margin-top: 55px;
+      li {
+        @include gradientText60;
+        font-size: 16px;
+        line-height: 22px;
+        margin-bottom: 25px;
+        position: relative;
+        &::before {
+          content: "";
+          width: 4px;
+          height: 4px;
+          background: -webkit-linear-gradient(
+            rgba(24, 42, 68, 0.6),
+            rgba(60, 82, 113, 0.6)
+          );
+          position: absolute;
+          border-radius: 100%;
+          top: 10px;
+          left: -15px;
+        }
+      }
+    }
+  }
+}
+
+.position-card {
+  border-radius: 10px;
+  box-shadow: -4px 4px 18px rgba(34, 82, 155, 0.1);
+  padding: 40px;
+  margin-bottom: 40px;
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.pci-one {
+  color: #ee333a;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+}
+
+.pci-two {
+  color: $light;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+  background: -webkit-linear-gradient(
+    rgba(24, 42, 68, 0.2),
+    rgba(60, 82, 113, 0.2)
+  );
+  text-decoration: none;
+  padding: 10px 40px;
+  border-radius: 5px;
+  align-items: center;
+}
+
+.pci-title {
+  @include gradientText;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 800;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.pci-date {
+  @include gradientText60;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.pci-loc {
+  @include gradientText60;
+  font-size: 18px;
+  line-height: 21px;
+  position: relative;
+  top: -6px;
+  margin-left: 15px;
+}

@@ -1,0 +1,95 @@
+.cms-area {
+  padding-top: 60px;
+  padding-bottom: 120px;
+  font-family: $font-2;
+  .cms-nav {
+    margin-top: 20px;
+    ul {
+      li {
+        margin-bottom: 24px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+        a {
+          font-size: 16px;
+          line-height: 22px;
+          @include gradientText60;
+          text-decoration: none;
+        }
+        a.active {
+          @include gradientText;
+          font-weight: 700;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+
+.cms-content {
+  .cms-title {
+    h1 {
+      @include gradientText;
+      font-weight: 700;
+      font-size: 64px;
+      line-height: 90px;
+    }
+    p {
+      @include gradientText;
+      font-weight: 500;
+      font-weight: 18px;
+      span {
+        font-weight: 300;
+      }
+    }
+  }
+}
+
+.cms-paragraph {
+  margin-top: 80px;
+  .cms-paragraph-item {
+    h3 {
+      @include gradientText;
+      font-size: 24px;
+      line-height: 34px;
+      margin-bottom: 15px;
+      font-weight: 600;
+    }
+    p {
+      @include gradientText60;
+      font-size: 16px;
+      line-height: 22px;
+      margin-bottom: 24px;
+      strong {
+        @include gradientText;
+      }
+    }
+  }
+}
+
+.cms-help {
+  width: 680px;
+  border-radius: 18px;
+  margin: 0 auto;
+  box-shadow: -4px 4px 18px rgba(34, 82, 155, 0.1);
+  padding: 30px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 60px;
+  .cms-help-item {
+    p {
+      font-size: 18px;
+      @include gradientText;
+      line-height: 25px;
+      font-weight: 600;
+    }
+    button {
+      border: 0;
+      background: #f9fafd;
+      padding: 10px 15px;
+      color: #3c5271a6;
+      font-size: 16px;
+    }
+  }
+}

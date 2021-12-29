@@ -1,0 +1,70 @@
+.success-stories {
+  font-family: $font-1;
+  padding: 125px 0;
+  .success-stories-content {
+    .title {
+      margin-bottom: 12px;
+      p {
+        font-size: 14px;
+        font-weight: 600;
+        margin-left: 35px;
+        text-transform: uppercase;
+        background: -webkit-linear-gradient(
+          rgba(24, 42, 68, 0.4),
+          rgba(60, 82, 113, 0.4)
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        position: relative;
+        &::before {
+          content: "";
+          position: absolute;
+          width: 28px;
+          height: 5px;
+          background: linear-gradient(90deg, #7d0000 0%, #c21313 100%);
+          border-radius: 26px;
+          bottom: 0;
+          left: -35px;
+        }
+      }
+    }
+    .title-head {
+      width: 360px;
+      min-width: 360px;
+      h2 {
+        font-size: 36px;
+        font-weight: 600;
+        @include gradientText;
+      }
+      p {
+        @include gradientText60;
+        font-size: 16px;
+        font-family: $font-2;
+        margin-top: 32px;
+        line-height: 24px;
+      }
+    }
+  }
+}
+
+.success-card {
+  max-width: 460px;
+  width: 460px;
+  border-radius: 10px;
+  box-shadow: (-4px 4px 18px rgba(34, 82, 155, 0.1));
+  padding: 44px;
+  position: relative;
+  &__image {
+    background: linear-gradient(90deg, #182a44 0%, #3c5271 100%);
+    border-radius: 5px;
+    position: absolute;
+    padding: 25px 15px;
+    top: -45px;
+    left: -45px;
+  }
+  p {
+    font-size: 14px;
+    line-height: 18px;
+    @include gradientText60;
+  }
+}

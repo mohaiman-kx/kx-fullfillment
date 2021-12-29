@@ -1,0 +1,47 @@
+@mixin gradientText {
+  background: -webkit-linear-gradient(#182a44, #3c5271);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@mixin gradientTextRed {
+  background: -webkit-radial-gradient(#7d0000, #c21313);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@mixin gradientText60 {
+  background: -webkit-linear-gradient(
+    rgba(24, 42, 68, 0.6),
+    rgba(60, 82, 113, 0.6)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@mixin gradientBtnBg {
+  background: radial-gradient(#7d0000, #c21313);
+}
+
+@mixin gradientBG {
+  background: -webkit-linear-gradient(
+    rgba(24, 42, 68, 1),
+    rgba(60, 82, 113, 1)
+  );
+}
+
+@mixin careerHeadingBlue($fw) {
+  font-weight: $fw;
+  @include gradientText;
+  font-size: 40px;
+  font-family: $font-2;
+  line-height: 60px;
+}
+
+@mixin careerHeadingRed($fw) {
+  font-weight: $fw;
+  @include gradientTextRed;
+  font-size: 40px;
+  font-family: $font-2;
+  line-height: 60px;
+}

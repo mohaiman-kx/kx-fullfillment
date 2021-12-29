@@ -1,0 +1,32 @@
+.breadcrumb-area {
+  padding: 15px 0;
+  font-family: $font-2;
+  filter: drop-shadow(0px 0px -1px #f1f1f1);
+  .breadcrumb-content {
+    ul {
+      display: flex;
+      li {
+        margin-right: 35px;
+        position: relative;
+        a {
+          @include gradientText60;
+          font-size: 14px;
+          line-height: 20px;
+          text-decoration: none;
+        }
+        a.active {
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
+
+.breadcrumb-content ul li:not(:first-child):before {
+  content: ">";
+  @include gradientText60;
+  font-weight: 600;
+  position: absolute;
+  left: -20px;
+  top: 3px;
+}
