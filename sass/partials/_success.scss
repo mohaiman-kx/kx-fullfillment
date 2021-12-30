@@ -68,3 +68,23 @@
     @include gradientText60;
   }
 }
+
+.success-card-one {
+  margin-top: 80px;
+  margin-left: 180px;
+}
+
+.success-card-two {
+  margin-top: 170px;
+  margin-left: 150px;
+}
+
+@media (max-width: 768px) {
+  .success-card {
+    max-width: 100%;
+  }
+  .success-card-one,
+  .success-card-two {
+    margin: 0;
+  }
+}
