@@ -122,3 +122,16 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+//scroll bar css
+body::-webkit-scrollbar {
+  width: 0.5em;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.4);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgba(24, 42, 68, 1);
+}
