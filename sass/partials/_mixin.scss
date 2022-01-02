@@ -23,6 +23,10 @@
   background: radial-gradient(#7d0000, #c21313);
 }
 
+@mixin gradientRedBG {
+  background: linear-gradient(to right, #7d0000, #c21313);
+}
+
 @mixin gradientBG {
   background: -webkit-linear-gradient(
     rgba(24, 42, 68, 1),

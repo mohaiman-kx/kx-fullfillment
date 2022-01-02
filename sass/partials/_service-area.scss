@@ -3,7 +3,7 @@
   font-family: $font-2;
 
   .our-service-title {
-    @include gradientBtnBg;
+    @include gradientRedBG;
     max-width: 310px;
     display: flex;
     -webkit-box-pack: end;
@@ -99,4 +99,31 @@
 .service-item-two .accordion .accordion-item {
   flex-grow: 1;
   width: 31%;
+}
+
+@media (max-width: 768px) {
+  .our-service-area .our-service-title {
+    min-height: inherit;
+    max-width: 100%;
+    justify-content: start;
+    p {
+      font-size: 24px;
+      line-height: 34px;
+      padding: 11px 0px 11px 40px;
+      text-align: left;
+    }
+  }
+  .service-item-one {
+    margin: 50px 0px 50px 0px;
+    .accordion {
+      max-width: 100%;
+    }
+  }
+  .service-item-two .accordion .accordion-item {
+    width: 100%;
+  }
+  .service-item .accordion .accordion-item .accordion-button {
+    font-size: 16px;
+    padding: 30px 18px;
+  }
 }
