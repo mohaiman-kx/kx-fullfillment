@@ -7,6 +7,16 @@
       width: 100px;
     }
   }
+  .navbar-nav {
+    .dropdown-menu {
+      border: 0;
+      box-shadow: -4px 4px 18px rgba(34, 82, 155, 0.1);
+      padding: 0;
+      .dropdown-item {
+        padding: 15px 10px;
+      }
+    }
+  }
 }
 
 .user-btn {
