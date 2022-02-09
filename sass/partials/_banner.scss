@@ -2,12 +2,12 @@
   padding: 100px 0 100px 0;
   font-family: $font-2;
   .banner-title {
-    min-width: 430px;
-    width: 430px;
+    min-width: 460px;
+    width: 460px;
     h1 {
       @include gradientText;
       font-size: 40px;
-      font-weight: 900;
+      font-weight: bold;
       line-height: 140%;
     }
   }
